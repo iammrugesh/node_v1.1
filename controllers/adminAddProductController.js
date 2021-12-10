@@ -1,3 +1,5 @@
+const productData = require("../models/productData.js");
+
 exports.addProductget = (req, res) => {
   res.render("add-product", {
     path:'/admin/add-product',
@@ -6,5 +8,7 @@ exports.addProductget = (req, res) => {
 };
 
 exports.addProductpost = (req, res) =>{
+  console.log(req.body.product);
+  // productData.saveProduct();
   res.redirect('/product');
 };
