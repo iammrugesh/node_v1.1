@@ -1,0 +1,14 @@
+<%- include('header.ejs') %>
+<%- include('navbar.ejs') %>
+        <div class="row">
+            <form action="/admin/add-product" method="POST">
+                <div class="form-group">
+                  <label for="product">Add Product</label>
+                  <input type="text" class="form-control" id="product" name="product">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

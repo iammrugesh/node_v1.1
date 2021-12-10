@@ -1,5 +1,6 @@
 exports.Productget = (req, res) => {
-    res.render("product", {
-
-    });
-  };
+  res.render("product", {
+    path:'/product',
+    pageTital:'Product List'
+  });
+};
