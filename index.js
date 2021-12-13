@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/admin", require("./routes/admin"));
 app.use("/", require("./routes/product"));
+app.use(require("./routes/error"));
 
 app.listen(port, () => {
   console.log(`port : ${port}`);
